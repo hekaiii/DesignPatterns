@@ -1,4 +1,4 @@
-package Iterator;
+package Iterator.example;
 
 /**
  * @Author: hek32

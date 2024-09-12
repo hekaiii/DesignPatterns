@@ -1,4 +1,4 @@
-package Iterator;
+package Iterator.example;
 
 import java.util.ArrayList;
 
@@ -15,6 +15,7 @@ public class test {
     students.add(new Student("test2","002"));
     students.add(new Student("test3","003"));
     students.add(new Student("test4","004"));
+
     StudentAggregateImpl studentAggregate = new StudentAggregateImpl(students);
     StudentIterator itserator = studentAggregate.getItserator();
     while (itserator.hasNext()) {

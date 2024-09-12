@@ -9,7 +9,7 @@ public class sdAdapterTf implements sdCard {
 
   private tfCard tfCard;
 
-  public sdAdapterTf(adapter.object.tfCard tfCard) {
+  public sdAdapterTf(tfCard tfCard) {
     this.tfCard = tfCard;
   }
 
