@@ -18,7 +18,7 @@ public class Person implements Serializable {
   private String name;
   private int age;
   private Adress adress;
-
+  //使用反序列化完成对象的clone
   public Person deepClone() {
     try {
       ByteArrayOutputStream bos  = new ByteArrayOutputStream();
@@ -29,6 +29,7 @@ public class Person implements Serializable {
       ObjectInputStream ois  = new ObjectInputStream(bis);
       Object o = ois.readObject();
       return (Person) o;
+
     } catch (Exception e) {
       e.printStackTrace();
       return null;
