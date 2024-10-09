@@ -1,4 +1,4 @@
-package adapter.classWay;
+package Adapter.object;
 
 /**
  * @Author: hek32

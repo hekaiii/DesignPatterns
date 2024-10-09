@@ -1,4 +1,4 @@
-package adapter.object;
+package Adapter.object;
 
 /**
  * @Author: hek32

@@ -1,4 +1,4 @@
-package adapter.exapmle;
+package Adapter.exapmle;
 
 /**
  * @Author: hek32
