@@ -1,29 +1,35 @@
 package Iterator.test01;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.concurrent.ExecutionException;
+import javax.lang.model.element.VariableElement;
 
 /**
  * @Author: hek32
  * @Description:
- * @Date: 2024/9/27
+ * @Date: 2024/10/22
  */
-public class BookShelf implements Aggregate{
+public class BookShelf implements Aggregate {
 
-  List<Book> books = new ArrayList<>();
-  Integer size = 0;
+  ArrayList<Book> books = new ArrayList<Book>();
+  int size = 0;
 
   public void addBook(Book book) {
     books.add(book);
     size++;
   }
 
-  public Book getBook(Integer index) {
-    return books.get(index);
+  public Book getBook(int index) {
+    if (index < size) {
+      return books.get(index);
+    } else {
+      throw new NoSuchElementException("没这本书");
+    }
   }
 
   @Override
-  public BookShelfIterator createBookShelfIterator() {
-    return  new BookIterator(this);
+  public Iterator<Book> createBookIterator() {
+    return new BookIterator(this);
   }
 }

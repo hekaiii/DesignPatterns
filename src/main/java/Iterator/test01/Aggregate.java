@@ -3,9 +3,9 @@ package Iterator.test01;
 /**
  * @Author: hek32
  * @Description:
- * @Date: 2024/9/27
+ * @Date: 2024/10/22
  */
 public interface Aggregate {
 
-  BookShelfIterator createBookShelfIterator();
+  Iterator<Book> createBookIterator();
 }

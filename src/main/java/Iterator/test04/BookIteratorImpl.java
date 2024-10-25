@@ -1,19 +1,18 @@
-package Iterator.test01;
+package Iterator.test04;
 
-import java.util.IdentityHashMap;
 import java.util.NoSuchElementException;
 
 /**
  * @Author: hek32
  * @Description:
- * @Date: 2024/10/22
+ * @Date: 2024/10/15
  */
-public class BookIterator implements Iterator<Book> {
+public class BookIteratorImpl implements BookIterator{
 
   BookShelf bookShelf;
 
-  int index = 0;
-  public BookIterator(BookShelf bookShelf) {
+  Integer index = 0;
+  public BookIteratorImpl(BookShelf bookShelf) {
     this.bookShelf = bookShelf;
   }
 
@@ -30,6 +29,6 @@ public class BookIterator implements Iterator<Book> {
     if (hasNext()) {
       return bookShelf.getBook(index++);
     }
-    throw new NoSuchElementException("没书了");
+    throw new NoSuchElementException("书架上没书了");
   }
 }

@@ -1,17 +1,13 @@
-package Iterator.test01;
+package Iterator.test03;
 
 /**
  * @Author: hek32
  * @Description:
- * @Date: 2024/10/22
+ * @Date: 2024/10/10
  */
 public class Book {
 
   private String name;
-
-  public Book(String name) {
-    this.name = name;
-  }
 
   public String getName() {
     return name;
@@ -27,4 +23,10 @@ public class Book {
         "name='" + name + '\'' +
         '}';
   }
+
+  public Book(String name) {
+    this.name = name;
+  }
+
+
 }

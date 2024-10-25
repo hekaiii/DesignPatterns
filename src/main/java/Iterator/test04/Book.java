@@ -1,30 +1,30 @@
-package Iterator.test01;
+package Iterator.test04;
 
 /**
  * @Author: hek32
  * @Description:
- * @Date: 2024/10/22
+ * @Date: 2024/10/15
  */
 public class Book {
 
-  private String name;
-
-  public Book(String name) {
-    this.name = name;
-  }
+  private String Name;
 
   public String getName() {
-    return name;
+    return Name;
   }
 
   public void setName(String name) {
-    this.name = name;
+    Name = name;
+  }
+
+  public Book(String name) {
+    Name = name;
   }
 
   @Override
   public String toString() {
     return "Book{" +
-        "name='" + name + '\'' +
+        "Name='" + Name + '\'' +
         '}';
   }
 }

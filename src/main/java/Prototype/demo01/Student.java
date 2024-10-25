@@ -1,15 +1,15 @@
-package Iterator.test01;
+package Prototype.demo01;
 
 /**
  * @Author: hek32
  * @Description:
- * @Date: 2024/10/22
+ * @Date: 2024/9/10
  */
-public class Book {
+public class Student implements Cloneable {
 
   private String name;
 
-  public Book(String name) {
+  public Student(String name) {
     this.name = name;
   }
 
@@ -22,8 +22,13 @@ public class Book {
   }
 
   @Override
+  protected Student clone() throws CloneNotSupportedException {
+    return (Student) super.clone();
+  }
+
+  @Override
   public String toString() {
-    return "Book{" +
+    return "Student{" +
         "name='" + name + '\'' +
         '}';
   }
