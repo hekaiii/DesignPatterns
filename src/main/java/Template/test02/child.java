@@ -7,6 +7,7 @@ package Template.test02;
  */
 public class child extends father{
 
+  private Integer count = 0;
 
   @Override
   public void firstStep() {
@@ -25,8 +26,9 @@ public class child extends father{
 
   @Override
   public Boolean hook() {
-    return true ;
+    if (count++ < 5) {
+      return true ;
+    }
+    return false;
   }
-
-
 }

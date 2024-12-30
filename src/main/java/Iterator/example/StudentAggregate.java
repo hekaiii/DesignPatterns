@@ -11,5 +11,5 @@ public interface StudentAggregate {
 
   void removeStudent(Student student);
 
-  StudentIterator getItserator();
+  StudentIterator getIterator();
 }

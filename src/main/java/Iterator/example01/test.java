@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class test {
 
   public static void main(String[] args) {
-    BookShelf bookShelf = new BookShelf(new ArrayList<>());
+    BookShelf bookShelf = new BookShelf(new ArrayList<Book>());
     bookShelf.appendBook(new Book("book1"));
     bookShelf.appendBook(new Book("book2"));
     bookShelf.appendBook(new Book("book3"));

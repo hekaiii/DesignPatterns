@@ -8,7 +8,7 @@ package Template.test02;
 public class client {
 
   public static void main(String[] args) {
-    child child = new child();
+    father child = new child();
     child.construct();
   }
 }

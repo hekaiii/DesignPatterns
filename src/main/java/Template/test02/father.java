@@ -9,10 +9,8 @@ public abstract class father {
 
   public final void construct() {
     firstStep();
-    if (hook()) {
-      for (int i = 0; i < 5; i++) {
+    while (hook()) {
         secondStep();
-      }
     }
     thirdStep();
   }

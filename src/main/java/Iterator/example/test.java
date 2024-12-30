@@ -17,7 +17,7 @@ public class test {
     students.add(new Student("test4","004"));
 
     StudentAggregateImpl studentAggregate = new StudentAggregateImpl(students);
-    StudentIterator itserator = studentAggregate.getItserator();
+    StudentIterator itserator = studentAggregate.getIterator();
     while (itserator.hasNext()) {
       Student stu = itserator.next();
       System.out.println(stu.toString());
